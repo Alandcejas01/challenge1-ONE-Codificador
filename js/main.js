@@ -10,6 +10,9 @@ function encriptar(event){
   entradaTexto.value = "";
   if (!/^([a-z,\s,])*$/.test(texto)){
     alert("Hay mayusculas, acentos, numeros o simbolos especiales en alguna parte del texto. Intentelo nuevamente")
+    mensaje.value = "";
+    copiar.setAttribute("hidden", true);
+    mostrarSalida();
   } else {
     console.log(texto);
     if(texto.length == 0){
@@ -29,7 +32,10 @@ function desencriptar(event){
   let texto = entradaTexto.value;
   entradaTexto.value = "";
   if(!/^([a-z,\s,])*$/.test(texto)){
-    alert("Hay mayusculas, acentos, numeros o simbolos especiales en alguna parte del texto. Intentelo nuevamente")
+    alert("Hay mayusculas, acentos, numeros o simbolos especiales en alguna parte del texto. Intentelo nuevamente");
+    mensaje.value = "";
+    copiar.setAttribute("hidden", true);
+    mostrarSalida();
   } else {
     if(texto.length == 0){
       mensaje.value = "";
@@ -65,6 +71,9 @@ function codificar(valor){
 
 function error() {
   alert("codificación invalida");
+  mensaje.value = "";
+  copiar.setAttribute("hidden", true);
+  mostrarSalida();
   throw new SyntaxError('codificación inválida')
 }
 
