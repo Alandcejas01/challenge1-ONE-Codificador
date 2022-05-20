@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Encriptador/Desencriptador de Texto</title>
+</head>
+<body>
+  <header>
+      <img class="logo" src="assets/img/logo.svg" alt="logo-alura">
+      <button id="toggle-theme"><i class="fa-solid fa-rotate"></i></button>
+  </header>
+  <main>
+    <section class="entrada">
+      <form>
+        <textarea id="entradaTexto" placeholder="Ingrese el texto aquí" ></textarea>
+          <p id="validacionTexto">Solo letras minúsculas y sin acentos</p>
+        </span>
+        <span>
+          <button id="encriptarBtn" class="boton">Encriptar</button>
+          <button id="desencriptarBtn" class="boton">Desencriptar</button>
+        </span>
+      </form>
+    </section>
+    <section class="salida">
+      <div class="salidaMensaje">
+        <textarea readonly hidden id="mensaje"></textarea>
+        <textarea readonly id="munieco"></textarea>
+        <p class="noMensaje">Ningún mensaje fue encontrado</p>
+        <p class="ingresaTexto">Ingresa el texto que desees encriptar o desencriptar.</p>
+        <button id="copiar" class="boton" hidden>Copiar</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <h2>Alan Cejas</h2>
+    <span class="redes">
+      <a href="https://github.com/Alandcejas01" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/alandcejas01/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </span>
+  </footer>
+  <script src="https://kit.fontawesome.com/1fa532a5b8.js" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
