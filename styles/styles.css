@@ -434,7 +434,9 @@ a:active{
     height: 30px;
   }
   
-
+  #entradaTexto {
+    height: 200px;
+  }
   #encriptarBtn,
   #desencriptarBtn{
     margin: 10px;
@@ -465,17 +467,15 @@ a:active{
   #entradaTexto{
     margin: 0;
     width: 99%;
+    height: 200px;
   }
 
   #encriptarBtn,
   #desencriptarBtn{
     margin: 8px;
-  }
-
-  #encriptarBtn,
-  #desencriptarBtn{
     width: 93%;
   }
+
   .salida{
     margin: 10px auto;
   }
