@@ -1,4 +1,5 @@
-body {
+body,
+textarea {
   background-color: #FFB5B5;
   transition: 300ms;
   font-family: 'Roboto Condensed', sans-serif;
@@ -52,6 +53,7 @@ textarea {
 }
 
 #entradaTexto::placeholder{
+  background-color: inherit;
   color: #000B49;
 }
 
@@ -168,7 +170,9 @@ footer {
 /* ****  Dark  **** 
    ****  Theme **** */
 
-body.dark-theme {
+body.dark-theme,
+body.dark-theme textarea,
+body.dark-theme textarea::placeholder{
   background-color: #222;
   transition: 300ms;
 }
@@ -177,35 +181,36 @@ body.dark-theme #toggle-theme,
 body.dark-theme #encriptarBtn,
 body.dark-theme #copiar {
   background-color: #B22727;
+  transition: 300ms;
 }
 
 body.dark-theme .entrada,
 body.dark-theme #entradaTexto,
 body.dark-theme #entradaTexto::placeholder{
   background-color: #222;
-  color: #fff
-}
-
-body.dark-theme #validacionTexto{
   color: #fff;
+  transition: 300ms;
 }
 
 body.dark-theme #desencriptarBtn,
 body.dark-theme footer,
-body.dark-theme .redes span,
-body.dark-theme #validacionTexto::before {
+body.dark-theme .redes span{
   background-color: #1a181aff;
   color: #FFF;
   border-color: #fff;
+  transition: 300ms;
 }
 
 body.dark-theme .salida{
   background-color: #1a181aff;
   color: #FFF;
+  transition: 300ms;
 }
 
 body.dark-theme .noMensaje,
 body.dark-theme .ingresaTexto,
+body.dark-theme #validacionTexto,
+body.dark-theme #validacionTexto::before,
 body.dark-theme #mensaje{
   color: #FFF;
 }
@@ -368,7 +373,7 @@ a:active{
   #entradaTexto{
     margin-top: 16px; 
     margin-left: 40px;
-    height: 600px;
+    height: 400px;
     width: 94%;
   }
 
