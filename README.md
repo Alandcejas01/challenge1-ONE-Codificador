@@ -50,4 +50,4 @@ Extras:
 
 - Al ingresar mayusculas, numeros o caracteres especiales no validos accionara un alert de error.
 
-### **Puedes ver la Live Demo [Aqui](https://alandcejas01.github.io/challenge1-ONE-Codificador/).**
+### **Puedes ver la Demostración del proyecto [Aqui](https://alandcejas01.github.io/challenge1-ONE-Codificador/).**
