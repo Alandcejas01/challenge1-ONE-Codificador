@@ -37,7 +37,7 @@ Extras:
 
 ## Funcionamiento
 <p align="center">
-  <img src="./assets/readme/screen-codificador.jpg" alt="imagen de tecnologías utilizadas (HTML-CSS-JavaScript)">
+  <img src="./assets/readme/screen-codificador.jpg" alt="Screenshot del proyecto funcionando">
 </p>
 
 - Posee un botón toggle para cambiar entre modo oscuro y normal
